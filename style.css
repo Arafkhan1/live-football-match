@@ -1,0 +1,247 @@
+/* common style and utilites */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #FFFFFF;
+    width: 100%;
+}
+
+header,
+main {
+    padding: 0 5%;
+}
+
+/* banner part start code */
+
+.player-title {
+    display: flex;
+    align-items: center;
+    background-color: #161616;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.banner-title {
+    padding: 111px 2px 111px 106px;
+}
+
+.title-size {
+    color: #FFFFFF;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.color-white {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #DD0000;
+    border-radius: 10px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.player-img {
+    width: 581px;
+}
+
+.player-img img {
+    width: 100%;
+}
+
+/* banner part end code */
+
+/* main menubar and blog part start code */
+.menu-bar {
+    width: 312px;
+    height: 312px;
+    background-color: #161616;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.menu-list {
+    text-align: center;
+    width: 252px;
+    height: 64px;
+    padding: 25px;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: #161616;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 30px 0;
+    border-radius: 10px;
+}
+
+#a {
+    background-color: #FFFFFF;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+#b {
+    background-color: #FFFFFF;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+#c {
+    background-color: #DD0000;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    column-gap: 23px;
+}
+
+article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.blogs {
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.blog-img img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.blogs>p {
+    display: inline-block;
+    margin: 20px 0 13px 20px;
+    padding: 5px 18px;
+    border: 1px solid #161616;
+    border-radius: 8px;
+}
+
+.blogs>p>a {
+    text-decoration: none;
+    color: #161616;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.blogs>h3 {
+    color: #161616;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    display: flex;
+    gap: 25px;
+}
+
+.icon>p {
+    color: #161616b3;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 5px;
+    padding-bottom: 2px;
+}
+
+/* view all btn decsktop device hide only tab device show */
+
+.view-all {
+    display: flex;
+    display: none;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.view-all a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #DD0000;
+    padding: 12px 30px;
+    border-radius: 10px;
+}
+
+/* footer code start */
+
+footer {
+    margin-top: 100px;
+    background-color: #161616;
+}
+
+footer h3 {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    text-align: center;
+    padding-top: 50px;
+}
+
+footer h3 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+hr {
+    margin: 0 7%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border: 1 px solid rgba(255, 255, 255, 0.31);
+}
+
+.flex-tag {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.flex-tag a {
+    text-decoration: none;
+    color: rgb(186, 186, 186);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-icon {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-icon a {
+    color: #FFFFFF;
+}
