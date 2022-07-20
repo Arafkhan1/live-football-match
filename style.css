@@ -20,6 +20,15 @@ main {
 }
 
 /* banner part start code */
+.banner {
+    transition: all;
+    transition-duration: 4s;
+}
+
+.banner:hover {
+    box-shadow: 20px 20px 30px rgb(156, 109, 109);
+    border-radius: 50px;
+}
 
 .player-title {
     display: flex;
@@ -39,6 +48,12 @@ main {
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 15px;
+    transition: all;
+    transition-duration: 3s;
+}
+
+.title-size:hover {
+    color: silver;
 }
 
 .color-white {
@@ -54,6 +69,11 @@ main {
     border-radius: 10px;
     padding: 15px 20px;
     cursor: pointer;
+}
+
+.btn:hover {
+    border: 1px solid rgb(185, 185, 118);
+    padding: 15px 19px;
 }
 
 .btn a {
@@ -104,15 +124,27 @@ main {
     border-radius: 10px;
 }
 
+#a:hover {
+    box-shadow: 5px 5px 20px red;
+}
+
 #b {
     background-color: #FFFFFF;
     margin-bottom: 30px;
     border-radius: 10px;
 }
 
+#b:hover {
+    box-shadow: 5px 5px 20px red;
+}
+
 #c {
     background-color: #DD0000;
     border-radius: 10px;
+}
+
+#c:hover {
+    box-shadow: 5px 5px 20px rgb(105, 104, 104);
 }
 
 .container {
@@ -134,6 +166,10 @@ article {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 
+.blogs:hover {
+    box-shadow: 5px 5px 30px gray;
+}
+
 .blog-img img {
     width: 100%;
     border-radius: 10px 10px 0px 0px;
@@ -152,6 +188,10 @@ article {
     color: #161616;
     font-size: 16px;
     font-weight: 500;
+}
+
+.blogs>p:hover {
+    box-shadow: 5px 5px 30px rgb(179, 153, 153);
 }
 
 .blogs>h3 {
@@ -194,6 +234,10 @@ article {
     border-radius: 10px;
 }
 
+.view-all a:hover {
+    background-color: #a38b8b;
+}
+
 /* footer code start */
 
 footer {
@@ -212,6 +256,10 @@ footer h3 {
 footer h3 a {
     text-decoration: none;
     color: #ffffff;
+}
+
+footer h3 a:hover {
+    color: #dd0000;
 }
 
 hr {
@@ -234,6 +282,10 @@ hr {
     font-weight: 500;
 }
 
+.flex-tag a:hover {
+    color: #dd0000;
+}
+
 .footer-icon {
     display: flex;
     gap: 40px;
@@ -244,4 +296,136 @@ hr {
 
 .footer-icon a {
     color: #FFFFFF;
+}
+
+.footer-icon a:hover {
+    color: #dd0000;
+}
+
+/* media query start code */
+
+/* media query for small scree device */
+/* banner section */
+
+@media only screen and (max-width: 676px) {
+    .player-title {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .banner-title {
+        padding: 28px 38px 21px 38px;
+        text-align: center;
+    }
+
+    .player-img {
+        padding: 0 20px;
+    }
+
+    .title-size {
+        font-size: 22px;
+    }
+
+    .color-white {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 10px 16px;
+    }
+
+    .btn:hover {
+        padding: 9px 15px;
+    }
+
+    /* main conter section */
+
+    .container {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .menu-bar {
+        background-color: #ffffff;
+        margin: 24px auto;
+    }
+
+    article {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    /* main container section end */
+
+    /* footer section code */
+
+    .flex-tag {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* media query for mediup devices */
+
+@media only screen and (min-width: 676px) and (max-width: 992px) {
+    .player-title {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .banner-title {
+        align-items: center;
+        padding: 30px 2px 30px 60px;
+    }
+
+    .player-img {
+        width: 100%;
+        padding: 30px 60px 30px 3px;
+    }
+
+    .title-size {
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    .color-white {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 12px 20px;
+    }
+
+    .btn:hover {
+        padding: 11px 19px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .menu-bar {
+        display: flex;
+        height: auto;
+        width: auto;
+        background-color: #ffffff;
+        gap: 22px
+    }
+
+    article {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .view-all {
+        display: flex;
+    }
+
+    .flex-tag {
+        flex-wrap: wrap;
+    }
+
 }
